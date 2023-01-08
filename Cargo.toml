@@ -1,0 +1,28 @@
+[package]
+name = "plagiarism"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jonathan <@bitquence>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+log = "0.4.17"
+pretty_env_logger = "0.4.0"
+eyre = "0.6.8"
+color-eyre = "0.6.2"
+serde_json = "1.0.91"
+
+[dependencies.serde]
+version = "1.0.152"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1.23.0"
+features = ["full"]
+
+[dependencies.serenity]
+git = "https://github.com/bitquence/serenity"
+default-features = false
+features = ["client", "gateway", "rustls_backend", "model"]
