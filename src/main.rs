@@ -72,7 +72,7 @@ async fn handle_message(
 
     if !files.is_empty() {
         embeds.push(Embed::fake(|e| {
-            e.title("attachements")
+            e.title("attachments")
                 .description(files.join("\n"))
                 .colour((47, 49, 54))
         }));
